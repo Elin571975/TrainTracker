@@ -1,0 +1,31 @@
+body{
+    background-image: url("background.jpg"); /*why didnt' work if file in other directory*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif; /*why adding fontawesome, font family changed?*/
+}
+
+.row{
+    font-size: 16px;
+}
+
+.card-header{
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+}
+
+/*Centralize text in the table*/
+#next,#minutes, #frequency, #trainFrequency, #trainNextArrival,#trainMinutesAway{
+    text-align: center;
+}
+
+#myAudio{
+    display: none;
+}
+
+#cross{
+    text-align: center;
+    background-color: grey;
+    cursor: alias;
+}

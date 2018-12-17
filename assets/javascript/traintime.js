@@ -14,17 +14,19 @@ var database = firebase.database();
 
 // ADDIND SOUND TO THE BUTTON ***NOT WORKING***
 
-// var audioElement = document.createElement('myAudio');
+var trainAudio = new Audio("assets/images/trainbell.mp3");
 
-// $('#add-train-btn').on("click", function(){
-//     audioElement.pause();
-//     audioElement.setAttribute('src', 'assets/images/trainbell.mp3');
-//     audioElement.addEventListener("load", function() {
-//     audioElement.play();
-//     }, true);
-//     console.log("teste");
-// });
+$("#add-train-btn").on("click", function(event) {
+   trainAudio.play();
 
+   setTimeout(function(){
+      trainAudio.pause();
+      trainAudio.currentTime = 0;
+    }, 1000);
+
+});
+
+ 
 //2. ADDING NEW TRAINS
 
 $("#add-train-btn").on("click", function(event) {
